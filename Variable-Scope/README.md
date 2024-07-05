@@ -36,7 +36,7 @@ This occurs when trying to shadow a variable using var within the same scope whe
 }
 
 ```
-In the above example, let b = "Bye"; is illegal shadowing because let cannot shadow the var it can happen vidce-versa.
+In the above example, let b = "Bye"; is illegal shadowing because let variable cannot shadow the var variable, but it can happen vice-versa.
 
 ### Hoisting : 
 In JavaScript, hoisting is a behavior where variable and function declarations are moved to the top of their containing scope during the compilation phase.
