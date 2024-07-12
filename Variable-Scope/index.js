@@ -34,5 +34,31 @@ test()
 // 4) Re-initialisation
 
 // 5) Hoisting
-console.log(c); // => Execution phase
+console.log("C : ",c); // => Execution phase
 var c = 10; // => Creation phase
+
+// How Javascript visualize the above code
+
+var d;
+console.log("D : ",d);
+d = 25;
+
+// Question 1 : 
+function abc(){
+    console.log(a);
+
+    var a = 10;
+}
+
+abc() // undefined
+
+// Question 2 : Temporal Dead Zone
+function def(){
+    console.log(a, c);
+
+    var a = 10;
+    // let b = 20; // Error : Cannot access 'b' before initialization
+    const c = 30;
+}
+
+def()

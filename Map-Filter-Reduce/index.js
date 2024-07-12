@@ -20,7 +20,8 @@ console.log(moreThanTwo)
 const nums3 = [1, 2, 3, 4];
 
 const sum = nums3.reduce((acc, cur, i, arr) => {
+    console.log(acc)
     return acc + cur;
-}, 5)
+})
 
 console.log(sum);
