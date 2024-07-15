@@ -114,20 +114,22 @@ console.timeEnd("50");
 // ________________________________________________________________________________________
 // Question 7 : Block scope and setTimeout
 
-function a(){
-  for (var i = 0; i < 3; i++) {
-    setTimeout(function log(){
-        console.log(i);   
-    }, 1000)  
-  }
-}
+// function a(){
+//   for (var i = 0; i < 3; i++) {
+//     setTimeout(function log(){
+//         console.log(i);   
+//     }, 1000)  
+//   }
+// }
 
-a();
+// a();
 
 // Output : 3 3 3 => This is happening because of var because var d oesn't have a block scope, var has function scope
 
 // solution
-// a) use 'let' instead of var
+// a) you can use "let" instead of "var", as let is block-scoped and will create a new binding  for      each iteration of the loop:
+
+// In this case, each setTimeout callback will have its own scope and will log the correct value of i as expected.
 
 // b) using closures
 for (var i =0;i<3;i++){
