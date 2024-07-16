@@ -115,8 +115,8 @@ newText("I'm a Backend Engineer!!")
 // Question 8 : Curry() implementation
 // Convert f(a,b,c) => f(a)(b)(c)
 
-function curry(func) {
-  return function curriedFunc(...args) {
+function curry(func) { // Takes normal function
+  return function curriedFunc(...args) {  // Returns curried function
       // console.log(args.length, func.length);
     if(args.length >= func.length) {
       return func(...args)
