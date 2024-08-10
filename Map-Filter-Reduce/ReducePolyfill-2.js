@@ -16,6 +16,6 @@ const nums3 = [1, 2, 3, 4];
 
 const sum = nums3.myReduce2((acc, cur, i, arr) => {
     return acc + cur;
-}, 5)
+}, 10)
 
 console.log(sum);
