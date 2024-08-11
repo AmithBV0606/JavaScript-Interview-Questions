@@ -93,10 +93,10 @@ function functionName1() {
     console.log("work at tech - 1");
 }
 
-functionName1();         // function is called after declaring it
+functionName1();// function is called after declaring it
 
 // With Hoisting:
-functionName2();        // function is called before declaring it
+functionName2();// function is called before declaring it
 
 function functionName2() {
     console.log("work at tech - 2");
