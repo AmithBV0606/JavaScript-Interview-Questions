@@ -124,7 +124,7 @@ console.timeEnd("50");
 
 // a();
 
-// Output : 3 3 3 => This is happening because of var because var d oesn't have a block scope, var has function scope
+// Output : 3 3 3 => This is happening because of var because var doesn't have a block scope, var has function scope
 
 // solution
 // a) you can use "let" instead of "var", as let is block-scoped and will create a new binding  for      each iteration of the loop:
@@ -152,6 +152,6 @@ When "var" is used in a loop, it creates a single binding for the variable "i" t
 // Here’s a step-by-step breakdown of what happens:
 
 // 1) The "for" loop runs with i taking the values `0`, `1`, and `2`.
-// 2) Each iteration triggers a setTimeout callback to run after 1000 milliseconds (1 second).
+// 2) Each iteration triggers a "setTimeout" callback to run after (i * 1000) milliseconds i.e after 0, 1 and 2 seconds.
 // 3) By the time the setTimeout callbacks execute, the for loop has finished, and the value of "i" is 3.
-// 4) Since var is function-scoped,and all setTimeout callbacks share the same i variable, they all print 3.
+// 4) Since "var" is function-scoped,and all setTimeout callbacks share the same i variable, they all print 3.
