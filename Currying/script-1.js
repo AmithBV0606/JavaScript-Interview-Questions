@@ -61,7 +61,7 @@ console.log(mul(5)(10));
 console.log(mul(6)(10));
 
 // __________________________________________________________________________________________________________________
-// Question 5 : Infinite Currying -> sum(1)(2)(3)....(n)
+// Question 5 :   
 
 function add(a){
   return function (b){
@@ -109,7 +109,8 @@ function updateText(id){
 }
 
 const newText = updateText("heading")
-newText("I'm a Backend Engineer!!")
+newText("I'm a Backend Engineer!!");
+newText("I'm a Data Engineer!!");
 
 // _____________________________________________________________________________________________________________________
 // Question 8 : Curry() implementation
