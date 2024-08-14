@@ -52,11 +52,11 @@ console.log(user)
 
 // JSON.Stringify()
 const newuser = JSON.stringify(user);
-console.log(`${typeof newuser}, ${newuser}`)
+console.log(`${typeof newuser}, ${newuser}`);
 
 // JSON.parse()
 const newuser2 = JSON.parse(newuser);
-console.log(`${typeof newuser2}, ${newuser2}`)
+console.log(`${typeof newuser2}, ${newuser2.name}`);
 
 // Common usecase
 // localStorage.setItem("test", newuser)
