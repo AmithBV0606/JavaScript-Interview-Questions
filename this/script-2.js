@@ -111,16 +111,16 @@ function callback(){
 
 const userE = {
     length: 5,
-    // method(fn){
-    //     fn();
-    // },
-    method(){
-        arguments[0](); // arguements = [callback, 2, 3]
+    method(fn){
+        fn();
     },
+    // method(){
+    //     arguments[0](); // arguements = [callback, 2, 3]
+    // },
 };
 
-// userE.method(callback) // 4
-userE.method(callback, 2, 3) // 3
+userE.method(callback) // 4
+// userE.method(callback, 2, 3) // 3
 
 // ___________________________________________________________________________________________
 
