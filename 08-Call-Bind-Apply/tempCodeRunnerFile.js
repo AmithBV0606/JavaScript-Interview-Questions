@@ -1,0 +1,1 @@
+purchaseCar.myCall(car1, '₹', '60,00,000');

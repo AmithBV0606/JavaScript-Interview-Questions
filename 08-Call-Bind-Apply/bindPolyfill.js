@@ -22,18 +22,17 @@ let car1 = {
 };
 
 Function.prototype.myBind = function(context = {}, ...args){
-    if (typeof this !== "function") {
-        throw new Error(this + "cannot be bound as it's not callable")
-    }
+  if (typeof this !== "function") {
+      throw new Error(this + "cannot be bound as it's not callable")
+  }
 
-    context.fn = this;
+  context.fn = this;
 
-    return function(...newArgs){
-        return context.fn(...args, ...newArgs)
-    }
-
+  return function(...newArgs){
+      return context.fn(...args, ...newArgs)
+  }
 }
 
 const newFunc = purchaseCar.myBind(car1);
 
-console.log(newFunc('₹', '6,00,000'))
+console.log(newFunc('₹', '6,00,000'));

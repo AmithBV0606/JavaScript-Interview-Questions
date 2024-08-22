@@ -77,4 +77,4 @@ class userClass {
 }
 
 const newObj = new userClass("Amith");
-newObj.getDetails()
+newObj.getDetails()``
