@@ -83,7 +83,7 @@ console.log("stop");
 
 console.log("________________________________________________________________")
 
-// Promises
+// As a solution to callbach hell, Promises was introduced
 console.log("start");
 
 const sub = new Promise((resolve, reject) => {
