@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Propagation</title>
+    <style>
+        body *{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid red;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: 100px 100px 100px;
+            row-gap: 10px;
+            column-gap: 20px;
+        }
+
+        span {
+            width: 100px;
+            height: 100px;
+            background-color: bisque;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Event Propagation</h1>
+
+    <div>
+        DIV
+        <form action="">
+            FORM
+            <button>
+                BUTTON
+            </button>
+        </form>
+    </div>
+
+    <div class="products">
+        <span class="mobile">mobile</span>
+        <span class="Headphone">Headphone</span>
+        <span class="laptop">laptop</span>
+        <span class="speaker">speaker</span>
+        <span class="USB Dock">USB Dock</span>
+        <span class="Tripod">Tripod</span>
+    </div>
+    <script src="script-1.js"></script>
+</body>
+</html>
